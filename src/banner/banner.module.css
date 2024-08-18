@@ -1,0 +1,50 @@
+.back {
+  position: relative;
+
+  height: 800px;
+}
+/* vì image đã là absolute nên nó mất đi vị trí vốn có của nó, nên ta phải tạo chiều cao của div bằng đúng chiều cao của hình để phần body hiển thị tiếp được*/
+.content {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  color: white;
+
+  width: 500px;
+  height: auto;
+}
+.title {
+  font-size: 3.5rem;
+  color: white;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+.button {
+  padding: 10px 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.461);
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.461);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.image {
+  position: absolute;
+  top: 0px;
+}
+.custom_Text {
+  overflow-y: auto;
+  height: 240px;
+}
+/* -giới hạn chiều cao của ô text là 240px, nếu nội dung chữ vượt quá thì nó sẽ tạo srcoll bar để kéo
+- Chỉ dùng được cho tag <div>
+ */
