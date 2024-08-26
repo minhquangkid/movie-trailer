@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
 import classes from "./navbar.module.css";
-
+import { useHistory } from "react-router-dom";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   // const [test, setTest] = useState("");
 
+  const history = useHistory();
+
   const goToSearch = () => {
-    window.location.replace("http://localhost:3000/search");
+    // window.location.replace("http://localhost:3000/search");
+    history.push("/search");
   };
   const goToHome = () => {
-    window.location.replace("http://localhost:3000/");
+    // window.location.replace("http://localhost:3000/");
+    history.push("/");
   };
 
   useEffect(() => {
