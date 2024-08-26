@@ -67,9 +67,9 @@ const Browse = () => {
     // console.log(e);
   };
 
-  const list = api.map((item) => {
+  const list = api.map((item, index) => {
     return (
-      <React.Fragment>
+      <React.Fragment key={index}>
         <MovieList
           getLink={item.link}
           type={item.typeFilm}
